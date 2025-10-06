@@ -118,7 +118,7 @@ export default function CryptoLearningLanding() {
           <div className="max-w-6xl mx-auto text-center">
             
             {/* Attention-Grabbing Badge */}
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full text-gray-900 font-bold text-sm mb-8 animate-pulse">
+            <div className="inline-flex items-center px-4 sm:px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full text-gray-900 font-bold text-xs sm:text-sm mb-8 animate-pulse">
               Limited Time: Free Access to Crypto Masterclass
             </div>
 
@@ -136,7 +136,7 @@ export default function CryptoLearningLanding() {
             </div>
 
             {/* Subheadline with Emotional Hook */}
-            <p className="text-2xl md:text-4xl text-gray-300 mb-8 font-light">
+            <p className="text-xl sm:text-2xl md:text-4xl text-gray-300 mb-8 font-light">
               While others watch from the sidelines,{" "}
               <span className="text-cyan-400 font-semibold">
                 smart beginners are building real wealth
@@ -146,7 +146,7 @@ export default function CryptoLearningLanding() {
 
             {/* Pain Points */}
             <div className="max-w-3xl mx-auto mb-12">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 text-left">
                 {[
                   {
                     icon: "😰",
@@ -161,16 +161,16 @@ export default function CryptoLearningLanding() {
                     text: "Dreaming of retirement before 50?"
                   }
                 ].map((point, index) => (
-                  <div key={index} className="flex items-center space-x-3 bg-gray-800/50 p-4 rounded-xl border border-gray-700">
+                  <div key={index} className="flex items-center space-x-3 bg-gray-800/50 p-3 sm:p-4 rounded-xl border border-gray-700">
                     <span className="text-2xl">{point.icon}</span>
-                    <span className="text-gray-300">{point.text}</span>
+                    <span className="text-gray-300 text-sm sm:text-base">{point.text}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Social Proof */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mb-12">
               <div className="flex items-center space-x-4">
                 <div className="flex -space-x-3">
                   {[1, 2, 3, 4].map((i) => (
@@ -189,17 +189,17 @@ export default function CryptoLearningLanding() {
                 {"★★★★★".split('').map((star, i) => (
                   <span key={i} className="text-xl">{star}</span>
                 ))}
-                <span className="text-white ml-2">4.9/5 from 892 reviews</span>
+                <span className="text-white ml-2 text-sm sm:text-base">4.9/5 from 892 reviews</span>
               </div>
             </div>
 
             {/* Enhanced CTA Section */}
             <div className="max-w-2xl mx-auto">
-              <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl p-8 border border-cyan-500/30 mb-8">
+              <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl p-6 sm:p-8 border border-cyan-500/30 mb-8">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
                   What You Get for FREE:
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-left">
                   {[
                     "Step-by-Step Crypto Buying Guide",
                     "Portfolio Building Strategies",
@@ -212,7 +212,7 @@ export default function CryptoLearningLanding() {
                       <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
                         <span className="text-white text-sm">✓</span>
                       </div>
-                      <span className="text-gray-300">{benefit}</span>
+                      <span className="text-gray-300 text-sm">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -224,7 +224,7 @@ export default function CryptoLearningLanding() {
                   href="https://t.me/+LAVc0V_XYN9mZDFk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full px-8 py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-xl relative overflow-hidden group"
+                  className="block w-full px-8 py-5 sm:py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-lg sm:text-xl relative overflow-hidden group"
                 >
                   <div className="absolute inset-0 bg-white/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   <span className="relative">
@@ -237,7 +237,7 @@ export default function CryptoLearningLanding() {
 
                 <button 
                   onClick={() => document.getElementById('steps').scrollIntoView({ behavior: 'smooth' })}
-                  className="px-8 py-4 bg-gray-800 hover:bg-gray-700 text-white font-bold rounded-xl transition-all duration-300 w-full border border-gray-600"
+                  className="px-8 py-4 bg-gray-800 hover:bg-gray-700 text-white font-bold rounded-xl transition-all duration-300 w-full border border-gray-600 text-sm sm:text-base"
                 >
                   I&apos;m Not Sure - Show Me How It Works First
                 </button>
@@ -246,7 +246,7 @@ export default function CryptoLearningLanding() {
                 <div className="text-center mt-4">
                   <div className="inline-flex items-center space-x-2 bg-red-500/20 px-4 py-2 rounded-full border border-red-500/30">
                     <span className="animate-pulse">⏰</span>
-                    <span className="text-red-400 text-sm font-medium">
+                    <span className="text-red-400 text-xs sm:text-sm font-medium">
                       Limited spots available - Join before group fills up!
                     </span>
                   </div>
@@ -255,7 +255,7 @@ export default function CryptoLearningLanding() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-70">
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 opacity-70">
               {[
                 { icon: "🔒", text: "No Credit Card Required" },
                 { icon: "⏱️", text: "30-Day Free Access" },
@@ -263,8 +263,8 @@ export default function CryptoLearningLanding() {
                 { icon: "↩️", text: "Cancel Anytime" }
               ].map((item, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-2xl mb-2">{item.icon}</div>
-                  <div className="text-gray-400 text-sm">{item.text}</div>
+                  <div className="text-xl sm:text-2xl mb-2">{item.icon}</div>
+                  <div className="text-gray-400 text-xs sm:text-sm">{item.text}</div>
                 </div>
               ))}
             </div>
@@ -278,7 +278,7 @@ export default function CryptoLearningLanding() {
               Real People, Real Results
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
               {[
                 {
                   name: "Sarah K.",
@@ -323,7 +323,7 @@ export default function CryptoLearningLanding() {
         {/* Stats Section */}
         <section className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               {[
                 { number: "5", label: "Simple Steps" },
                 { number: "$20", label: "Minimum Start" },
@@ -368,7 +368,7 @@ export default function CryptoLearningLanding() {
                     {/* Content */}
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-                      <p className="text-gray-300 mb-4 leading-relaxed">{step.description}</p>
+                      <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">{step.description}</p>
                       
                       {/* Tips */}
                       <div className="mb-4">
@@ -412,11 +412,11 @@ export default function CryptoLearningLanding() {
               What Happens If You Don&apos;t Start Today?
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-8">
               <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
-                <div className="text-2xl mb-4">The Cost of Waiting</div>
-                <h3 className="text-xl font-bold text-white mb-4">What You&apos;ll Miss</h3>
-                <ul className="space-y-3 text-left">
+                <div className="text-xl sm:text-2xl mb-4">The Cost of Waiting</div>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-4">What You&apos;ll Miss</h3>
+                <ul className="space-y-3 text-left text-sm sm:text-base">
                   {[
                     "Miss the next crypto bull run",
                     "Watch others profit while you hesitate",
@@ -433,9 +433,9 @@ export default function CryptoLearningLanding() {
               </div>
               
               <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20">
-                <div className="text-2xl mb-4">The Reward of Starting</div>
-                <h3 className="text-xl font-bold text-white mb-4">What You&apos;ll Gain</h3>
-                <ul className="space-y-3 text-left">
+                <div className="text-xl sm:text-2xl mb-4">The Reward of Starting</div>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-4">What You&apos;ll Gain</h3>
+                <ul className="space-y-3 text-left text-sm sm:text-base">
                   {[
                     "Catch the next 10x opportunity",
                     "Build wealth while you sleep",
@@ -474,7 +474,7 @@ export default function CryptoLearningLanding() {
                       {coin.risk} Risk
                     </span>
                   </div>
-                  <p className="text-gray-300 mb-3">{coin.description}</p>
+                  <p className="text-gray-300 mb-3 text-sm sm:text-base">{coin.description}</p>
                   <div className="text-sm text-cyan-400">
                     <strong>Why start here:</strong> {coin.why}
                   </div>
@@ -495,7 +495,7 @@ export default function CryptoLearningLanding() {
               {commonMistakes.map((mistake, index) => (
                 <div key={index} className="flex items-start bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 p-4">
                   <span className="text-red-400 mr-3 mt-1">❌</span>
-                  <p className="text-gray-300">{mistake}</p>
+                  <p className="text-gray-300 text-sm sm:text-base">{mistake}</p>
                 </div>
               ))}
             </div>
@@ -521,7 +521,7 @@ export default function CryptoLearningLanding() {
                 },
                 {
                   objection: "I'm worried about scams and losing money",
-                  response: "That's exactly why you need proper education! We teach you how to spot scams and protect your investments from day one."
+                  response: "That&apos;s exactly why you need proper education! We teach you how to spot scams and protect your investments from day one."
                 },
                 {
                   objection: "I don't have time to learn this",
@@ -535,7 +535,7 @@ export default function CryptoLearningLanding() {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-white mb-2">{item.objection}</h3>
-                      <p className="text-gray-300">{item.response}</p>
+                      <p className="text-gray-300 text-sm sm:text-base">{item.response}</p>
                     </div>
                   </div>
                 </div>
@@ -565,7 +565,7 @@ export default function CryptoLearningLanding() {
                   {
                     icon: "🛡️",
                     title: "No Investment Needed",
-                    desc: "Learn first, invest when you're ready"
+                    desc: "Learn first, invest when you&apos;re ready"
                   },
                   {
                     icon: "⏰",
@@ -589,7 +589,7 @@ export default function CryptoLearningLanding() {
               </div>
               
               <div className="bg-yellow-500/20 border border-yellow-500/30 rounded-xl p-4">
-                <p className="text-yellow-300 font-semibold">
+                <p className="text-yellow-300 font-semibold text-sm sm:text-base">
                   Warning: The only risk is NOT starting. Every day you wait, you&apos;re missing potential opportunities in the crypto market.
                 </p>
               </div>
@@ -625,7 +625,7 @@ export default function CryptoLearningLanding() {
               ].map((faq, index) => (
                 <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 p-6">
                   <h3 className="text-lg font-bold text-white mb-3">{faq.question}</h3>
-                  <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">{faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -641,12 +641,12 @@ export default function CryptoLearningLanding() {
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
                 <div className="flex items-center">
                   <span className="animate-pulse text-red-400 mr-2">🔥</span>
-                  <span className="text-red-400 font-bold">LIVE:</span>
+                  <span className="text-red-400 font-bold text-sm">LIVE:</span>
                 </div>
-                <div className="text-white">
+                <div className="text-white text-sm sm:text-base">
                   <span className="font-bold">47 people</span> joined in the last hour
                 </div>
-                <div className="text-yellow-400">
+                <div className="text-yellow-400 text-sm sm:text-base">
                   Only <span className="font-bold">23 spots</span> remaining today
                 </div>
               </div>
@@ -658,13 +658,13 @@ export default function CryptoLearningLanding() {
                 Your Financial Future Starts Now
               </h2>
               
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                 Join <span className="text-cyan-400 font-bold">4,287+ beginners</span> who&apos;ve already taken control of their financial destiny. 
                 What are you waiting for?
               </p>
 
               {/* Benefits Recap */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
                 {[
                   "Free Access",
                   "24/7 Support", 
@@ -682,7 +682,7 @@ export default function CryptoLearningLanding() {
                 href="https://t.me/+LAVc0V_XYN9mZDFk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full max-w-md px-8 py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-xl mb-4"
+                className="inline-flex items-center justify-center w-full max-w-md px-8 py-5 sm:py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-lg sm:text-xl mb-4"
               >
                 START MY FREE CRYPTO JOURNEY NOW
               </a>
