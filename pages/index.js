@@ -36,7 +36,8 @@ export default function CryptoLearningLanding() {
     {
       step: 3,
       title: "Buy Your First Crypto",
-      description: "Begin with established coins like Bitcoin (BTC) or Ethereum (ETH). Think of these as the 'blue chips' of the crypto world.",
+      // FIX 1: Replaced single quotes around 'blue chips' with &apos;
+      description: "Begin with established coins like Bitcoin (BTC) or Ethereum (ETH). Think of these as the &apos;blue chips&apos; of the crypto world.",
       icon: "💰",
       tips: [
         "BTC & ETH are the safest starting points",
@@ -224,7 +225,7 @@ export default function CryptoLearningLanding() {
             <div className="w-full max-w-2xl mx-auto">
               <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-xl sm:rounded-2xl p-4 sm:p-8 border border-green-500/30 mb-6">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-3 sm:mb-4">
-                  You'll Learn How To:
+                  You&apos;ll Learn How To:
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-left">
                   {[
@@ -330,7 +331,8 @@ export default function CryptoLearningLanding() {
         <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-500/10 to-emerald-500/10">
           <div className="w-full max-w-6xl mx-auto">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-400">
-              Types of 50x-100x Opportunities You'll Learn to Spot
+              {/* FIX 2: Replaced You'll with You&apos;ll */}
+              Types of 50x-100x Opportunities You&apos;ll Learn to Spot
             </h2>
 
             <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
@@ -470,7 +472,7 @@ export default function CryptoLearningLanding() {
               
               <p className="text-sm sm:text-base md:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Join <span className="text-green-400 font-bold">4,287+ investors</span> who are learning to spot life-changing crypto opportunities. 
-                Don't watch from the sidelines.
+                Don&apos;t watch from the sidelines.
               </p>
 
               {/* Benefits Recap */}
