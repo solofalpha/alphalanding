@@ -5,35 +5,10 @@ import { useState, useEffect } from 'react';
 export default function CryptoLearningLanding() {
   const [currentStep, setCurrentStep] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-  const [typedText, setTypedText] = useState('');
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-
-  const rotatingWords = ['Financial Freedom', 'Wealth Building', 'Early Retirement', 'Passive Income', 'Life on Your Terms'];
 
   useEffect(() => {
     setIsVisible(true);
-    
-    // Typewriter effect
-    const currentWord = rotatingWords[currentWordIndex];
-    let currentText = '';
-    let i = 0;
-    
-    const typeWriter = () => {
-      if (i < currentWord.length) {
-        currentText += currentWord.charAt(i);
-        setTypedText(currentText);
-        i++;
-        setTimeout(typeWriter, 100);
-      } else {
-        setTimeout(() => {
-          setCurrentWordIndex((prev) => (prev + 1) % rotatingWords.length);
-          setTypedText('');
-        }, 2000);
-      }
-    };
-    
-    typeWriter();
-  }, [currentWordIndex]);
+  }, []);
 
   const learningSteps = [
     {
@@ -147,7 +122,7 @@ export default function CryptoLearningLanding() {
               Limited Time: Free Access to Crypto Masterclass
             </div>
 
-            {/* Main Headline with Typewriter Effect */}
+            {/* Main Headline - Static Text */}
             <div className="mb-6">
               <h1 className="text-4xl md:text-7xl font-bold mb-4">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400">
@@ -155,8 +130,7 @@ export default function CryptoLearningLanding() {
                 </span>
                 <br />
                 <span className="text-cyan-400 border-b-4 border-cyan-400 pb-2">
-                  {typedText}
-                  <span className="animate-pulse">|</span>
+                  Financial Freedom
                 </span>
               </h1>
             </div>
@@ -258,14 +232,14 @@ export default function CryptoLearningLanding() {
                   </span>
                 </a>
                 <p className="text-gray-400 text-sm">
-                  You'll be redirected to join our Telegram group for free access
+                  You&apos;ll be redirected to join our Telegram group for free access
                 </p>
 
                 <button 
                   onClick={() => document.getElementById('steps').scrollIntoView({ behavior: 'smooth' })}
                   className="px-8 py-4 bg-gray-800 hover:bg-gray-700 text-white font-bold rounded-xl transition-all duration-300 w-full border border-gray-600"
                 >
-                  I'm Not Sure - Show Me How It Works First
+                  I&apos;m Not Sure - Show Me How It Works First
                 </button>
 
                 {/* Urgency Timer */}
@@ -336,7 +310,7 @@ export default function CryptoLearningLanding() {
                       <p className="text-cyan-400 text-sm">{story.role}</p>
                     </div>
                   </div>
-                  <p className="text-gray-300 mb-4 italic">"{story.quote}"</p>
+                  <p className="text-gray-300 mb-4 italic">&quot;{story.quote}&quot;</p>
                   <div className="bg-green-500/20 border border-green-500/30 rounded-lg px-3 py-2">
                     <p className="text-green-400 font-bold text-sm">{story.result}</p>
                   </div>
@@ -435,13 +409,13 @@ export default function CryptoLearningLanding() {
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-500/10 to-pink-500/10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              What Happens If You Don't Start Today?
+              What Happens If You Don&apos;t Start Today?
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
                 <div className="text-2xl mb-4">The Cost of Waiting</div>
-                <h3 className="text-xl font-bold text-white mb-4">What You'll Miss</h3>
+                <h3 className="text-xl font-bold text-white mb-4">What You&apos;ll Miss</h3>
                 <ul className="space-y-3 text-left">
                   {[
                     "Miss the next crypto bull run",
@@ -460,7 +434,7 @@ export default function CryptoLearningLanding() {
               
               <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20">
                 <div className="text-2xl mb-4">The Reward of Starting</div>
-                <h3 className="text-xl font-bold text-white mb-4">What You'll Gain</h3>
+                <h3 className="text-xl font-bold text-white mb-4">What You&apos;ll Gain</h3>
                 <ul className="space-y-3 text-left">
                   {[
                     "Catch the next 10x opportunity",
@@ -616,7 +590,7 @@ export default function CryptoLearningLanding() {
               
               <div className="bg-yellow-500/20 border border-yellow-500/30 rounded-xl p-4">
                 <p className="text-yellow-300 font-semibold">
-                  Warning: The only risk is NOT starting. Every day you wait, you're missing potential opportunities in the crypto market.
+                  Warning: The only risk is NOT starting. Every day you wait, you&apos;re missing potential opportunities in the crypto market.
                 </p>
               </div>
             </div>
@@ -646,7 +620,7 @@ export default function CryptoLearningLanding() {
                 },
                 {
                   question: "What if I lose my password?",
-                  answer: "This is why your recovery phrase is crucial! It's the only way to restore access to your wallet if you forget your password or lose your device."
+                  answer: "This is why your recovery phrase is crucial! It&apos;s the only way to restore access to your wallet if you forget your password or lose your device."
                 }
               ].map((faq, index) => (
                 <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 p-6">
@@ -685,7 +659,7 @@ export default function CryptoLearningLanding() {
               </h2>
               
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Join <span className="text-cyan-400 font-bold">4,287+ beginners</span> who've already taken control of their financial destiny. 
+                Join <span className="text-cyan-400 font-bold">4,287+ beginners</span> who&apos;ve already taken control of their financial destiny. 
                 What are you waiting for?
               </p>
 
@@ -713,11 +687,11 @@ export default function CryptoLearningLanding() {
                 START MY FREE CRYPTO JOURNEY NOW
               </a>
               <p className="text-gray-400 text-sm mb-6">
-                You'll be redirected to join our Telegram group for instant free access
+                You&apos;ll be redirected to join our Telegram group for instant free access
               </p>
 
               <p className="text-gray-400 text-sm">
-                Instant access • No credit card • Join before spots fill up
+                Instant access • No credit card required
               </p>
             </div>
           </div>
