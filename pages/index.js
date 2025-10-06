@@ -104,39 +104,39 @@ export default function CryptoLearningLanding() {
   ];
 
   return (
-    <div className="min-h-screen w-screen min-w-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-x-hidden">
-      {/* Enhanced Animated Background */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 -left-20 w-72 h-72 bg-blue-500/20 rounded-full filter blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/2 -right-20 w-96 h-96 bg-cyan-500/15 rounded-full filter blur-3xl animate-pulse animation-delay-1000"></div>
-        <div className="absolute bottom-20 left-1/4 w-64 h-64 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse animation-delay-2000"></div>
+    <div className="min-h-screen w-full bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-x-hidden">
+      {/* Fixed Background Animation */}
+      <div className="fixed inset-0 z-0 overflow-hidden">
+        <div className="absolute top-1/4 -left-10 sm:-left-20 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/20 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 -right-10 sm:-right-20 w-64 sm:w-96 h-64 sm:h-96 bg-cyan-500/15 rounded-full filter blur-3xl animate-pulse animation-delay-1000"></div>
+        <div className="absolute bottom-20 left-1/4 w-40 sm:w-64 h-40 sm:h-64 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse animation-delay-2000"></div>
       </div>
 
       <div className="relative z-10 w-full">
-        {/* SUPERCHARGED HERO SECTION */}
-        <section className={`min-h-screen w-full flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        {/* HERO SECTION - Fixed for mobile */}
+        <section className={`min-h-screen w-full flex items-center justify-center py-8 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="w-full max-w-6xl mx-auto text-center">
             
             {/* Attention-Grabbing Badge */}
-            <div className="inline-flex items-center px-4 sm:px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full text-gray-900 font-bold text-xs sm:text-sm mb-8 animate-pulse">
+            <div className="inline-flex items-center px-4 sm:px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full text-gray-900 font-bold text-xs sm:text-sm mb-6 animate-pulse">
               Limited Time: Free Access to Crypto Masterclass
             </div>
 
             {/* Main Headline - Static Text */}
-            <div className="mb-6">
-              <h1 className="text-4xl md:text-7xl font-bold mb-4">
+            <div className="mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold mb-4">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400">
                   Unlock
                 </span>
                 <br />
-                <span className="text-cyan-400 border-b-4 border-cyan-400 pb-2">
+                <span className="text-cyan-400 border-b-2 sm:border-b-4 border-cyan-400 pb-1 sm:pb-2 text-2xl sm:text-4xl md:text-7xl">
                   Financial Freedom
                 </span>
               </h1>
             </div>
 
             {/* Subheadline with Emotional Hook */}
-            <p className="text-xl sm:text-2xl md:text-4xl text-gray-300 mb-8 font-light">
+            <p className="text-lg sm:text-xl md:text-4xl text-gray-300 mb-6 font-light">
               While others watch from the sidelines,{" "}
               <span className="text-cyan-400 font-semibold">
                 smart beginners are building real wealth
@@ -145,8 +145,8 @@ export default function CryptoLearningLanding() {
             </p>
 
             {/* Pain Points */}
-            <div className="w-full max-w-3xl mx-auto mb-12">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 text-left">
+            <div className="w-full max-w-3xl mx-auto mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 text-left">
                 {[
                   {
                     icon: "😰",
@@ -161,45 +161,45 @@ export default function CryptoLearningLanding() {
                     text: "Dreaming of retirement before 50?"
                   }
                 ].map((point, index) => (
-                  <div key={index} className="flex items-center space-x-3 bg-gray-800/50 p-3 sm:p-4 rounded-xl border border-gray-700">
-                    <span className="text-2xl">{point.icon}</span>
-                    <span className="text-gray-300 text-sm sm:text-base">{point.text}</span>
+                  <div key={index} className="flex items-center space-x-2 sm:space-x-3 bg-gray-800/50 p-3 sm:p-4 rounded-xl border border-gray-700">
+                    <span className="text-xl sm:text-2xl">{point.icon}</span>
+                    <span className="text-gray-300 text-xs sm:text-base">{point.text}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Social Proof */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mb-12">
-              <div className="flex items-center space-x-4">
-                <div className="flex -space-x-3">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-8">
+              <div className="flex items-center space-x-3 sm:space-x-4">
+                <div className="flex -space-x-2 sm:-space-x-3">
                   {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full border-2 border-gray-900 flex items-center justify-center text-white text-sm font-bold">
+                    <div key={i} className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full border-2 border-gray-900 flex items-center justify-center text-white text-xs sm:text-sm font-bold">
                       {i}
                     </div>
                   ))}
                 </div>
                 <div className="text-left">
-                  <div className="text-white font-bold">4,287+ Students</div>
-                  <div className="text-cyan-400 text-sm">Already started their journey</div>
+                  <div className="text-white font-bold text-sm sm:text-base">4,287+ Students</div>
+                  <div className="text-cyan-400 text-xs sm:text-sm">Already started their journey</div>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-2 text-yellow-400">
+              <div className="flex items-center space-x-1 sm:space-x-2 text-yellow-400">
                 {"★★★★★".split('').map((star, i) => (
-                  <span key={i} className="text-xl">{star}</span>
+                  <span key={i} className="text-lg sm:text-xl">{star}</span>
                 ))}
-                <span className="text-white ml-2 text-sm sm:text-base">4.9/5 from 892 reviews</span>
+                <span className="text-white ml-1 sm:ml-2 text-xs sm:text-base">4.9/5 from 892 reviews</span>
               </div>
             </div>
 
             {/* Enhanced CTA Section */}
             <div className="w-full max-w-2xl mx-auto">
-              <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl p-6 sm:p-8 border border-cyan-500/30 mb-8">
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
+              <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-xl sm:rounded-2xl p-4 sm:p-8 border border-cyan-500/30 mb-6">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-3 sm:mb-4">
                   What You Get for FREE:
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-left">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-left">
                   {[
                     "Step-by-Step Crypto Buying Guide",
                     "Portfolio Building Strategies",
@@ -208,46 +208,46 @@ export default function CryptoLearningLanding() {
                     "Live Q&A Sessions",
                     "Market Analysis Updates"
                   ].map((benefit, index) => (
-                    <div key={index} className="flex items-center space-x-3">
-                      <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                        <span className="text-white text-sm">✓</span>
+                    <div key={index} className="flex items-center space-x-2 sm:space-x-3">
+                      <div className="w-4 h-4 sm:w-6 sm:h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white text-xs sm:text-sm">✓</span>
                       </div>
-                      <span className="text-gray-300 text-sm">{benefit}</span>
+                      <span className="text-gray-300 text-xs sm:text-sm">{benefit}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
               {/* Urgency CTA Buttons */}
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <a
                   href="https://t.me/+LAVc0V_XYN9mZDFk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full px-8 py-5 sm:py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-lg sm:text-xl relative overflow-hidden group"
+                  className="block w-full px-4 sm:px-8 py-4 sm:py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold rounded-xl sm:rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-base sm:text-lg md:text-xl relative overflow-hidden group"
                 >
                   <div className="absolute inset-0 bg-white/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   <span className="relative">
                     YES! I Want Financial Freedom - Start FREE Training
                   </span>
                 </a>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-400 text-xs sm:text-sm">
                   You&apos;ll be redirected to join our Telegram group for free access
                 </p>
 
                 <button 
                   onClick={() => document.getElementById('steps').scrollIntoView({ behavior: 'smooth' })}
-                  className="px-8 py-4 bg-gray-800 hover:bg-gray-700 text-white font-bold rounded-xl transition-all duration-300 w-full border border-gray-600 text-sm sm:text-base"
+                  className="px-4 sm:px-8 py-3 sm:py-4 bg-gray-800 hover:bg-gray-700 text-white font-bold rounded-lg sm:rounded-xl transition-all duration-300 w-full border border-gray-600 text-xs sm:text-base"
                 >
                   I&apos;m Not Sure - Show Me How It Works First
                 </button>
 
                 {/* Urgency Timer */}
-                <div className="text-center mt-4">
-                  <div className="inline-flex items-center space-x-2 bg-red-500/20 px-4 py-2 rounded-full border border-red-500/30">
-                    <span className="animate-pulse">⏰</span>
+                <div className="text-center mt-3 sm:mt-4">
+                  <div className="inline-flex items-center space-x-1 sm:space-x-2 bg-red-500/20 px-3 sm:px-4 py-1 sm:py-2 rounded-full border border-red-500/30">
+                    <span className="animate-pulse text-sm">⏰</span>
                     <span className="text-red-400 text-xs sm:text-sm font-medium">
-                      Limited spots available - Join before group fills up!
+                      Limited spots available!
                     </span>
                   </div>
                 </div>
@@ -255,15 +255,15 @@ export default function CryptoLearningLanding() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 opacity-70">
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-8 opacity-70">
               {[
-                { icon: "🔒", text: "No Credit Card Required" },
-                { icon: "⏱️", text: "30-Day Free Access" },
+                { icon: "🔒", text: "No Credit Card" },
+                { icon: "⏱️", text: "30-Day Free" },
                 { icon: "💬", text: "24/7 Support" },
                 { icon: "↩️", text: "Cancel Anytime" }
               ].map((item, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-xl sm:text-2xl mb-2">{item.icon}</div>
+                  <div className="text-lg sm:text-2xl mb-1 sm:mb-2">{item.icon}</div>
                   <div className="text-gray-400 text-xs sm:text-sm">{item.text}</div>
                 </div>
               ))}
@@ -272,13 +272,13 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Social Proof - Success Stories */}
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/30">
+        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/30">
           <div className="w-full max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Real People, Real Results
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-8">
               {[
                 {
                   name: "Sarah K.",
@@ -302,17 +302,17 @@ export default function CryptoLearningLanding() {
                   avatar: "👨‍👩‍👧"
                 }
               ].map((story, index) => (
-                <div key={index} className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
-                  <div className="flex items-center mb-4">
-                    <div className="text-3xl mr-4">{story.avatar}</div>
+                <div key={index} className="bg-gray-800/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-gray-700">
+                  <div className="flex items-center mb-3 sm:mb-4">
+                    <div className="text-2xl sm:text-3xl mr-3 sm:mr-4">{story.avatar}</div>
                     <div>
-                      <h4 className="font-bold text-white">{story.name}</h4>
-                      <p className="text-cyan-400 text-sm">{story.role}</p>
+                      <h4 className="font-bold text-white text-sm sm:text-base">{story.name}</h4>
+                      <p className="text-cyan-400 text-xs sm:text-sm">{story.role}</p>
                     </div>
                   </div>
-                  <p className="text-gray-300 mb-4 italic">&quot;{story.quote}&quot;</p>
-                  <div className="bg-green-500/20 border border-green-500/30 rounded-lg px-3 py-2">
-                    <p className="text-green-400 font-bold text-sm">{story.result}</p>
+                  <p className="text-gray-300 mb-3 sm:mb-4 text-xs sm:text-sm italic">&quot;{story.quote}&quot;</p>
+                  <div className="bg-green-500/20 border border-green-500/30 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
+                    <p className="text-green-400 font-bold text-xs sm:text-sm">{story.result}</p>
                   </div>
                 </div>
               ))}
@@ -321,18 +321,18 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Stats Section */}
-        <section className="w-full py-12 px-4 sm:px-6 lg:px-8">
+        <section className="w-full py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-6xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
               {[
                 { number: "5", label: "Simple Steps" },
                 { number: "$20", label: "Minimum Start" },
                 { number: "30", label: "Minutes Setup" },
                 { number: "0%", label: "Experience Needed" }
               ].map((stat, index) => (
-                <div key={index} className="text-center p-6 bg-gray-800/50 rounded-2xl border border-gray-700 backdrop-blur-sm">
-                  <div className="text-2xl md:text-3xl font-bold text-blue-400 mb-2">{stat.number}</div>
-                  <div className="text-gray-300 text-sm">{stat.label}</div>
+                <div key={index} className="text-center p-4 sm:p-6 bg-gray-800/50 rounded-xl sm:rounded-2xl border border-gray-700 backdrop-blur-sm">
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-400 mb-1 sm:mb-2">{stat.number}</div>
+                  <div className="text-gray-300 text-xs sm:text-sm">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -340,43 +340,43 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Learning Steps */}
-        <section id="steps" className="w-full py-16 px-4 sm:px-6 lg:px-8">
+        <section id="steps" className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Your 5-Step Crypto Starter Guide
             </h2>
 
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               {learningSteps.map((step, index) => (
                 <div 
                   key={index}
-                  className={`bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 p-6 transition-all duration-500 hover:border-blue-500/30 ${
+                  className={`bg-gray-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-gray-700 p-4 sm:p-6 transition-all duration-500 hover:border-blue-500/30 ${
                     currentStep === index ? 'ring-2 ring-blue-500/50' : ''
                   }`}
                 >
-                  <div className="flex flex-col md:flex-row gap-6">
+                  <div className="flex flex-col md:flex-row gap-4 sm:gap-6">
                     {/* Step Number & Icon */}
                     <div className="flex-shrink-0">
-                      <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold text-lg">
+                      <div className="flex items-center gap-3 sm:gap-4">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold text-base sm:text-lg">
                           {step.step}
                         </div>
-                        <div className="text-3xl">{step.icon}</div>
+                        <div className="text-2xl sm:text-3xl">{step.icon}</div>
                       </div>
                     </div>
 
                     {/* Content */}
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-                      <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">{step.description}</p>
+                      <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">{step.title}</h3>
+                      <p className="text-gray-300 mb-3 sm:mb-4 leading-relaxed text-xs sm:text-sm md:text-base">{step.description}</p>
                       
                       {/* Tips */}
-                      <div className="mb-4">
-                        <h4 className="text-sm font-semibold text-cyan-400 mb-2">Important Tips:</h4>
+                      <div className="mb-3 sm:mb-4">
+                        <h4 className="text-xs sm:text-sm font-semibold text-cyan-400 mb-1 sm:mb-2">Important Tips:</h4>
                         <ul className="space-y-1">
                           {step.tips.map((tip, tipIndex) => (
-                            <li key={tipIndex} className="flex items-center text-sm text-gray-300">
-                              <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>
+                            <li key={tipIndex} className="flex items-center text-xs sm:text-sm text-gray-300">
+                              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-cyan-400 rounded-full mr-2 sm:mr-3"></span>
                               {tip}
                             </li>
                           ))}
@@ -389,14 +389,14 @@ export default function CryptoLearningLanding() {
             </div>
 
             {/* Step Navigation */}
-            <div className="flex justify-center mt-8 space-x-2">
+            <div className="flex justify-center mt-6 sm:mt-8 space-x-1 sm:space-x-2">
               {learningSteps.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentStep(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
                     currentStep === index
-                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 w-8'
+                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 w-6 sm:w-8'
                       : 'bg-gray-600 hover:bg-gray-500'
                   }`}
                 />
@@ -406,17 +406,17 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* FOMO Section */}
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-500/10 to-pink-500/10">
+        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-500/10 to-pink-500/10">
           <div className="w-full max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white">
               What Happens If You Don&apos;t Start Today?
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-8">
-              <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
-                <div className="text-xl sm:text-2xl mb-4">The Cost of Waiting</div>
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-4">What You&apos;ll Miss</h3>
-                <ul className="space-y-3 text-left text-sm sm:text-base">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-8 mb-8">
+              <div className="bg-red-500/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-red-500/20">
+                <div className="text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4">The Cost of Waiting</div>
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-3 sm:mb-4">What You&apos;ll Miss</h3>
+                <ul className="space-y-2 sm:space-y-3 text-left text-xs sm:text-sm md:text-base">
                   {[
                     "Miss the next crypto bull run",
                     "Watch others profit while you hesitate",
@@ -425,17 +425,17 @@ export default function CryptoLearningLanding() {
                     "Regret not starting earlier"
                   ].map((item, index) => (
                     <li key={index} className="flex items-center text-red-300">
-                      <span className="mr-3">❌</span>
+                      <span className="mr-2 sm:mr-3">❌</span>
                       {item}
                     </li>
                   ))}
                 </ul>
               </div>
               
-              <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20">
-                <div className="text-xl sm:text-2xl mb-4">The Reward of Starting</div>
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-4">What You&apos;ll Gain</h3>
-                <ul className="space-y-3 text-left text-sm sm:text-base">
+              <div className="bg-green-500/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-green-500/20">
+                <div className="text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4">The Reward of Starting</div>
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-3 sm:mb-4">What You&apos;ll Gain</h3>
+                <ul className="space-y-2 sm:space-y-3 text-left text-xs sm:text-sm md:text-base">
                   {[
                     "Catch the next 10x opportunity",
                     "Build wealth while you sleep",
@@ -444,7 +444,7 @@ export default function CryptoLearningLanding() {
                     "Join the 1% who act instead of watch"
                   ].map((item, index) => (
                     <li key={index} className="flex items-center text-green-300">
-                      <span className="mr-3">✅</span>
+                      <span className="mr-2 sm:mr-3">✅</span>
                       {item}
                     </li>
                   ))}
@@ -455,17 +455,17 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Beginner-Friendly Coins */}
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
+        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
           <div className="w-full max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Good Starting Coins for Beginners
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
               {beginnerFriendlyCoins.map((coin, index) => (
-                <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 p-6">
+                <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-gray-700 p-4 sm:p-6">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-lg font-bold text-white">{coin.name}</h3>
+                    <h3 className="text-base sm:text-lg font-bold text-white">{coin.name}</h3>
                     <span className={`px-2 py-1 rounded text-xs font-medium ${
                       coin.risk === 'Low' ? 'bg-green-500/20 text-green-400' :
                       coin.risk === 'Low-Medium' ? 'bg-blue-500/20 text-blue-400' :
@@ -474,8 +474,8 @@ export default function CryptoLearningLanding() {
                       {coin.risk} Risk
                     </span>
                   </div>
-                  <p className="text-gray-300 mb-3 text-sm sm:text-base">{coin.description}</p>
-                  <div className="text-sm text-cyan-400">
+                  <p className="text-gray-300 mb-3 text-xs sm:text-sm md:text-base">{coin.description}</p>
+                  <div className="text-xs sm:text-sm text-cyan-400">
                     <strong>Why start here:</strong> {coin.why}
                   </div>
                 </div>
@@ -485,17 +485,17 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Common Mistakes to Avoid */}
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
+        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Common Beginner Mistakes to Avoid
             </h2>
 
-            <div className="grid gap-4">
+            <div className="grid gap-3 sm:gap-4">
               {commonMistakes.map((mistake, index) => (
-                <div key={index} className="flex items-start bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 p-4">
-                  <span className="text-red-400 mr-3 mt-1">❌</span>
-                  <p className="text-gray-300 text-sm sm:text-base">{mistake}</p>
+                <div key={index} className="flex items-start bg-gray-800/50 backdrop-blur-sm rounded-lg sm:rounded-xl border border-gray-700 p-3 sm:p-4">
+                  <span className="text-red-400 mr-2 sm:mr-3 mt-0.5 sm:mt-1 text-sm">❌</span>
+                  <p className="text-gray-300 text-xs sm:text-sm md:text-base">{mistake}</p>
                 </div>
               ))}
             </div>
@@ -503,13 +503,13 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Objection Handling */}
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
+        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Common Concerns - Addressed
             </h2>
             
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {[
                 {
                   objection: "I don't have enough money to start",
@@ -528,14 +528,14 @@ export default function CryptoLearningLanding() {
                   response: "Our lessons take 10-15 minutes per day. Most students complete the core training during their lunch break or commute."
                 }
               ].map((item, index) => (
-                <div key={index} className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
+                <div key={index} className="bg-gray-800/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-gray-700">
                   <div className="flex items-start">
-                    <div className="bg-red-500/20 rounded-lg p-3 mr-4">
-                      <span className="text-red-400 font-bold">?</span>
+                    <div className="bg-red-500/20 rounded-lg p-2 sm:p-3 mr-3 sm:mr-4">
+                      <span className="text-red-400 font-bold text-sm">?</span>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-white mb-2">{item.objection}</h3>
-                      <p className="text-gray-300 text-sm sm:text-base">{item.response}</p>
+                      <h3 className="text-base sm:text-lg font-bold text-white mb-2">{item.objection}</h3>
+                      <p className="text-gray-300 text-xs sm:text-sm md:text-base">{item.response}</p>
                     </div>
                   </div>
                 </div>
@@ -545,17 +545,17 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Risk Reversal Section */}
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
+        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-4xl mx-auto text-center">
-            <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-3xl p-8 border border-green-500/20">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mb-6 text-2xl">
+            <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-green-500/20">
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-green-500 rounded-full mb-4 sm:mb-6 text-xl sm:text-2xl">
                 ✅
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
                 Zero Risk. Maximum Reward.
               </h2>
               
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
                 {[
                   {
                     icon: "💰",
@@ -578,18 +578,18 @@ export default function CryptoLearningLanding() {
                     desc: "Strategies that actually work for beginners"
                   }
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start space-x-4 text-left">
-                    <div className="text-2xl">{item.icon}</div>
+                  <div key={index} className="flex items-start space-x-3 sm:space-x-4 text-left">
+                    <div className="text-xl sm:text-2xl">{item.icon}</div>
                     <div>
-                      <h4 className="font-bold text-white">{item.title}</h4>
-                      <p className="text-gray-300 text-sm">{item.desc}</p>
+                      <h4 className="font-bold text-white text-sm sm:text-base">{item.title}</h4>
+                      <p className="text-gray-300 text-xs sm:text-sm">{item.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
               
-              <div className="bg-yellow-500/20 border border-yellow-500/30 rounded-xl p-4">
-                <p className="text-yellow-300 font-semibold text-sm sm:text-base">
+              <div className="bg-yellow-500/20 border border-yellow-500/30 rounded-lg sm:rounded-xl p-3 sm:p-4">
+                <p className="text-yellow-300 font-semibold text-xs sm:text-sm md:text-base">
                   Warning: The only risk is NOT starting. Every day you wait, you&apos;re missing potential opportunities in the crypto market.
                 </p>
               </div>
@@ -598,13 +598,13 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* FAQ Section */}
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
+        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
           <div className="w-full max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Frequently Asked Questions
             </h2>
 
-            <div className="grid gap-6">
+            <div className="grid gap-4 sm:gap-6">
               {[
                 {
                   question: "How much money do I need to start?",
@@ -623,9 +623,9 @@ export default function CryptoLearningLanding() {
                   answer: "This is why your recovery phrase is crucial! It&apos;s the only way to restore access to your wallet if you forget your password or lose your device."
                 }
               ].map((faq, index) => (
-                <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 p-6">
-                  <h3 className="text-lg font-bold text-white mb-3">{faq.question}</h3>
-                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">{faq.answer}</p>
+                <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-gray-700 p-4 sm:p-6">
+                  <h3 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3">{faq.question}</h3>
+                  <p className="text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base">{faq.answer}</p>
                 </div>
               ))}
             </div>
@@ -633,46 +633,46 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Final CTA with Scarcity */}
-        <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/30 to-cyan-900/30">
+        <section className="w-full py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/30 to-cyan-900/30">
           <div className="w-full max-w-4xl mx-auto text-center">
             
             {/* Live Counter */}
-            <div className="bg-red-500/20 border border-red-500/30 rounded-xl p-4 mb-8">
-              <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+            <div className="bg-red-500/20 border border-red-500/30 rounded-lg sm:rounded-xl p-3 sm:p-4 mb-6 sm:mb-8">
+              <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-3 sm:space-x-4">
                 <div className="flex items-center">
-                  <span className="animate-pulse text-red-400 mr-2">🔥</span>
-                  <span className="text-red-400 font-bold text-sm">LIVE:</span>
+                  <span className="animate-pulse text-red-400 mr-1 sm:mr-2 text-sm">🔥</span>
+                  <span className="text-red-400 font-bold text-xs sm:text-sm">LIVE:</span>
                 </div>
-                <div className="text-white text-sm sm:text-base">
+                <div className="text-white text-xs sm:text-sm md:text-base">
                   <span className="font-bold">47 people</span> joined in the last hour
                 </div>
-                <div className="text-yellow-400 text-sm sm:text-base">
+                <div className="text-yellow-400 text-xs sm:text-sm md:text-base">
                   Only <span className="font-bold">23 spots</span> remaining today
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-3xl p-8 border border-cyan-500/30 relative overflow-hidden">
+            <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-cyan-500/30 relative overflow-hidden">
               
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
                 Your Financial Future Starts Now
               </h2>
               
-              <p className="text-base sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base md:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Join <span className="text-cyan-400 font-bold">4,287+ beginners</span> who&apos;ve already taken control of their financial destiny. 
                 What are you waiting for?
               </p>
 
               {/* Benefits Recap */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 mb-6 sm:mb-8">
                 {[
                   "Free Access",
                   "24/7 Support", 
                   "Proven Results",
                   "Zero Risk"
                 ].map((benefit, index) => (
-                  <div key={index} className="bg-gray-800/50 rounded-lg p-3">
-                    <div className="text-green-400 text-sm font-bold">{benefit}</div>
+                  <div key={index} className="bg-gray-800/50 rounded-lg p-2 sm:p-3">
+                    <div className="text-green-400 text-xs sm:text-sm font-bold">{benefit}</div>
                   </div>
                 ))}
               </div>
@@ -682,15 +682,15 @@ export default function CryptoLearningLanding() {
                 href="https://t.me/+LAVc0V_XYN9mZDFk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full max-w-md px-8 py-5 sm:py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-lg sm:text-xl mb-4"
+                className="inline-flex items-center justify-center w-full max-w-md px-4 sm:px-8 py-4 sm:py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold rounded-xl sm:rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-base sm:text-lg md:text-xl mb-3 sm:mb-4"
               >
                 START MY FREE CRYPTO JOURNEY NOW
               </a>
-              <p className="text-gray-400 text-sm mb-6">
+              <p className="text-gray-400 text-xs sm:text-sm mb-4 sm:mb-6">
                 You&apos;ll be redirected to join our Telegram group for instant free access
               </p>
 
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400 text-xs sm:text-sm">
                 Instant access • No credit card required
               </p>
             </div>
