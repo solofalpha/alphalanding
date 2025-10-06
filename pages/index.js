@@ -57,50 +57,77 @@ export default function CryptoLearningLanding() {
     },
     {
       step: 5,
-      title: "Start Learning & Exploring",
-      description: "The crypto world is vast! Start exploring different projects, learn about DeFi, NFTs, and find communities that match your interests.",
-      icon: "🌍",
+      title: "Spot 50x-100x Potential Coins",
+      description: "Learn the exact framework to identify early-stage projects with massive growth potential before they explode.",
+      icon: "🚀",
       tips: [
-        "Join educational crypto communities",
-        "Follow reputable sources for news",
-        "Take your time - there's no rush to learn everything"
+        "Analyze tokenomics and team background",
+        "Identify strong community engagement",
+        "Spot partnerships and real-world utility"
       ]
     }
   ];
 
-  const beginnerFriendlyCoins = [
+  const massiveGainCoins = [
     {
-      name: "Bitcoin (BTC)",
-      description: "The original cryptocurrency - digital gold",
-      why: "Proven track record, widespread adoption",
-      risk: "Low"
+      name: "Early-Stage Gems",
+      description: "Coins with $10M-$50M market cap that can 50x",
+      examples: "Like early Solana, Avalanche, Polygon",
+      potential: "50x-100x Potential"
     },
     {
-      name: "Ethereum (ETH)",
-      description: "The foundation for most decentralized apps",
-      why: "Strong developer community, multiple use cases",
-      risk: "Low-Medium"
+      name: "DeFi Protocols",
+      description: "Decentralized finance projects solving real problems",
+      examples: "Lending, borrowing, yield farming platforms",
+      potential: "30x-80x Potential"
     },
     {
-      name: "Solana (SOL)",
-      description: "High-speed blockchain for fast transactions",
-      why: "Fast and cheap transactions, growing ecosystem",
-      risk: "Medium"
+      name: "AI & Metaverse Tokens",
+      description: "Next-generation technology projects",
+      examples: "AI infrastructure, virtual world tokens",
+      potential: "50x-100x+ Potential"
     },
     {
-      name: "Cardano (ADA)",
-      description: "Research-driven blockchain platform",
-      why: "Strong academic backing, methodical development",
-      risk: "Medium"
+      name: "Layer 2 Solutions",
+      description: "Scaling solutions for major blockchains",
+      examples: "Rollups, sidechains, scaling protocols",
+      potential: "20x-60x Potential"
+    }
+  ];
+
+  const successStories = [
+    {
+      name: "Mike R.",
+      role: "College Student",
+      result: "Turned $500 into $25,000",
+      quote: "Spotted an AI crypto gem early and caught a 50x move!",
+      avatar: "👨‍🎓",
+      timeframe: "6 months"
+    },
+    {
+      name: "Sarah K.",
+      role: "Teacher",
+      result: "$1,000 → $78,000",
+      quote: "Learned to identify low-cap gems before major listings",
+      avatar: "👩‍🏫",
+      timeframe: "9 months"
+    },
+    {
+      name: "David T.",
+      role: "Freelancer",
+      result: "$2,000 → $120,000",
+      quote: "Mastered the art of timing entry points on emerging tech",
+      avatar: "👨‍💻",
+      timeframe: "1 year"
     }
   ];
 
   const commonMistakes = [
-    "Investing based on hype without research",
-    "Not securing recovery phrases properly",
-    "Trying to day trade without experience",
-    "Falling for 'get rich quick' schemes",
-    "Sharing private keys with anyone"
+    "Buying at all-time highs due to FOMO",
+    "Not taking profits on 10x-20x gains",
+    "Ignoring tokenomics and team credentials",
+    "Chasing hype without fundamental analysis",
+    "Selling too early on 5x gains missing 50x+ moves"
   ];
 
   return (
@@ -113,55 +140,55 @@ export default function CryptoLearningLanding() {
       </div>
 
       <div className="relative z-10 w-full">
-        {/* HERO SECTION - Fixed for mobile */}
+        {/* SUPERCHARGED HERO SECTION */}
         <section className={`min-h-screen w-full flex items-center justify-center py-8 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="w-full max-w-6xl mx-auto text-center">
             
             {/* Attention-Grabbing Badge */}
             <div className="inline-flex items-center px-4 sm:px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full text-gray-900 font-bold text-xs sm:text-sm mb-6 animate-pulse">
-              Limited Time: Free Access to Crypto Masterclass
+              🚀 Discover How to Spot 50x-100x Crypto Gems
             </div>
 
             {/* Main Headline - Static Text */}
             <div className="mb-4">
               <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold mb-4">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400">
-                  Unlock
+                  Find Crypto Gems
                 </span>
                 <br />
-                <span className="text-cyan-400 border-b-2 sm:border-b-4 border-cyan-400 pb-1 sm:pb-2 text-2xl sm:text-4xl md:text-7xl">
-                  Financial Freedom
+                <span className="text-green-400 border-b-2 sm:border-b-4 border-green-400 pb-1 sm:pb-2 text-2xl sm:text-4xl md:text-7xl">
+                  Before They 100x
                 </span>
               </h1>
             </div>
 
             {/* Subheadline with Emotional Hook */}
             <p className="text-lg sm:text-xl md:text-4xl text-gray-300 mb-6 font-light">
-              While others watch from the sidelines,{" "}
-              <span className="text-cyan-400 font-semibold">
-                smart beginners are building real wealth
+              While 95% of investors buy the hype,{" "}
+              <span className="text-green-400 font-semibold">
+                our students learn to spot 50x-100x opportunities
               </span>{" "}
-              with cryptocurrency
+              before major pumps
             </p>
 
-            {/* Pain Points */}
+            {/* Massive Gains Proof */}
             <div className="w-full max-w-3xl mx-auto mb-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 text-left">
                 {[
                   {
-                    icon: "😰",
-                    text: "Tired of living paycheck to paycheck?"
+                    icon: "📈",
+                    text: "$500 → $25,000 in 6 months"
                   },
                   {
-                    icon: "⏰",
-                    text: "Working 40+ hours with nothing to show?"
+                    icon: "💎",
+                    text: "Spot gems before CEX listings"
                   },
                   {
-                    icon: "🏖️",
-                    text: "Dreaming of retirement before 50?"
+                    icon: "⚡",
+                    text: "Learn to time 50x entry points"
                   }
                 ].map((point, index) => (
-                  <div key={index} className="flex items-center space-x-2 sm:space-x-3 bg-gray-800/50 p-3 sm:p-4 rounded-xl border border-gray-700">
+                  <div key={index} className="flex items-center space-x-2 sm:space-x-3 bg-gray-800/50 p-3 sm:p-4 rounded-xl border border-green-500/30">
                     <span className="text-xl sm:text-2xl">{point.icon}</span>
                     <span className="text-gray-300 text-xs sm:text-base">{point.text}</span>
                   </div>
@@ -174,14 +201,14 @@ export default function CryptoLearningLanding() {
               <div className="flex items-center space-x-3 sm:space-x-4">
                 <div className="flex -space-x-2 sm:-space-x-3">
                   {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full border-2 border-gray-900 flex items-center justify-center text-white text-xs sm:text-sm font-bold">
+                    <div key={i} className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full border-2 border-gray-900 flex items-center justify-center text-white text-xs sm:text-sm font-bold">
                       {i}
                     </div>
                   ))}
                 </div>
                 <div className="text-left">
                   <div className="text-white font-bold text-sm sm:text-base">4,287+ Students</div>
-                  <div className="text-cyan-400 text-xs sm:text-sm">Already started their journey</div>
+                  <div className="text-green-400 text-xs sm:text-sm">Already spotting 10x+ opportunities</div>
                 </div>
               </div>
               
@@ -195,18 +222,18 @@ export default function CryptoLearningLanding() {
 
             {/* Enhanced CTA Section */}
             <div className="w-full max-w-2xl mx-auto">
-              <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-xl sm:rounded-2xl p-4 sm:p-8 border border-cyan-500/30 mb-6">
+              <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-xl sm:rounded-2xl p-4 sm:p-8 border border-green-500/30 mb-6">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-3 sm:mb-4">
-                  What You Get for FREE:
+                  You'll Learn How To:
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-left">
                   {[
-                    "Step-by-Step Crypto Buying Guide",
-                    "Portfolio Building Strategies",
-                    "Risk Management Techniques",
-                    "24/7 Community Support",
-                    "Live Q&A Sessions",
-                    "Market Analysis Updates"
+                    "Spot coins before 50x-100x moves",
+                    "Analyze tokenomics for massive gains",
+                    "Time entries at perfect moments",
+                    "Identify strong teams & partnerships",
+                    "Avoid rug pulls and scams",
+                    "Take profits strategically"
                   ].map((benefit, index) => (
                     <div key={index} className="flex items-center space-x-2 sm:space-x-3">
                       <div className="w-4 h-4 sm:w-6 sm:h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
@@ -228,18 +255,18 @@ export default function CryptoLearningLanding() {
                 >
                   <div className="absolute inset-0 bg-white/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   <span className="relative">
-                    YES! I Want Financial Freedom - Start FREE Training
+                    🔥 YES! Show Me How to Find 50x-100x Coins
                   </span>
                 </a>
                 <p className="text-gray-400 text-xs sm:text-sm">
-                  You&apos;ll be redirected to join our Telegram group for free access
+                  Join our FREE Telegram group for instant access to crypto gem analysis
                 </p>
 
                 <button 
-                  onClick={() => document.getElementById('steps').scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('success').scrollIntoView({ behavior: 'smooth' })}
                   className="px-4 sm:px-8 py-3 sm:py-4 bg-gray-800 hover:bg-gray-700 text-white font-bold rounded-lg sm:rounded-xl transition-all duration-300 w-full border border-gray-600 text-xs sm:text-base"
                 >
-                  I&apos;m Not Sure - Show Me How It Works First
+                  Show Me Real Student Results First
                 </button>
 
                 {/* Urgency Timer */}
@@ -247,7 +274,7 @@ export default function CryptoLearningLanding() {
                   <div className="inline-flex items-center space-x-1 sm:space-x-2 bg-red-500/20 px-3 sm:px-4 py-1 sm:py-2 rounded-full border border-red-500/30">
                     <span className="animate-pulse text-sm">⏰</span>
                     <span className="text-red-400 text-xs sm:text-sm font-medium">
-                      Limited spots available!
+                      Next 50x opportunity analysis dropping in 24 hours!
                     </span>
                   </div>
                 </div>
@@ -257,10 +284,10 @@ export default function CryptoLearningLanding() {
             {/* Trust Indicators */}
             <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-8 opacity-70">
               {[
-                { icon: "🔒", text: "No Credit Card" },
-                { icon: "⏱️", text: "30-Day Free" },
+                { icon: "🔍", text: "Gem Analysis" },
+                { icon: "📊", text: "Real-time Alerts" },
                 { icon: "💬", text: "24/7 Support" },
-                { icon: "↩️", text: "Cancel Anytime" }
+                { icon: "🎯", text: "Proven Methods" }
               ].map((item, index) => (
                 <div key={index} className="text-center">
                   <div className="text-lg sm:text-2xl mb-1 sm:mb-2">{item.icon}</div>
@@ -271,48 +298,27 @@ export default function CryptoLearningLanding() {
           </div>
         </section>
 
-        {/* Social Proof - Success Stories */}
-        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/30">
+        {/* MASSIVE GAINS PROOF SECTION */}
+        <section id="success" className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/30">
           <div className="w-full max-w-6xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
-              Real People, Real Results
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-400">
+              Real Students, Massive Gains
             </h2>
             
             <div className="grid md:grid-cols-3 gap-4 sm:gap-8">
-              {[
-                {
-                  name: "Sarah K.",
-                  role: "Former Teacher",
-                  result: "Made $3,200 in 3 months",
-                  quote: "I went from zero crypto knowledge to making my first profitable trade in just 2 weeks!",
-                  avatar: "👩‍🏫"
-                },
-                {
-                  name: "Mike R.",
-                  role: "College Student",
-                  result: "Earns $500/month passive",
-                  quote: "The community helped me avoid costly beginner mistakes. Paid for my entire semester!",
-                  avatar: "👨‍🎓"
-                },
-                {
-                  name: "Lisa & Tom",
-                  role: "Working Parents",
-                  result: "$15k portfolio in 6 months",
-                  quote: "We're building our kids' college fund through crypto. Life-changing education!",
-                  avatar: "👨‍👩‍👧"
-                }
-              ].map((story, index) => (
-                <div key={index} className="bg-gray-800/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-gray-700">
+              {successStories.map((story, index) => (
+                <div key={index} className="bg-gray-800/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-green-500/30">
                   <div className="flex items-center mb-3 sm:mb-4">
                     <div className="text-2xl sm:text-3xl mr-3 sm:mr-4">{story.avatar}</div>
                     <div>
                       <h4 className="font-bold text-white text-sm sm:text-base">{story.name}</h4>
-                      <p className="text-cyan-400 text-xs sm:text-sm">{story.role}</p>
+                      <p className="text-green-400 text-xs sm:text-sm">{story.role}</p>
                     </div>
                   </div>
                   <p className="text-gray-300 mb-3 sm:mb-4 text-xs sm:text-sm italic">&quot;{story.quote}&quot;</p>
-                  <div className="bg-green-500/20 border border-green-500/30 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
+                  <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg px-2 sm:px-3 py-1 sm:py-2">
                     <p className="text-green-400 font-bold text-xs sm:text-sm">{story.result}</p>
+                    <p className="text-green-300 text-xs">in {story.timeframe}</p>
                   </div>
                 </div>
               ))}
@@ -320,45 +326,73 @@ export default function CryptoLearningLanding() {
           </div>
         </section>
 
-        {/* Stats Section */}
-        <section className="w-full py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+        {/* 50x-100x POTENTIAL COINS */}
+        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-500/10 to-emerald-500/10">
           <div className="w-full max-w-6xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
-              {[
-                { number: "5", label: "Simple Steps" },
-                { number: "$20", label: "Minimum Start" },
-                { number: "30", label: "Minutes Setup" },
-                { number: "0%", label: "Experience Needed" }
-              ].map((stat, index) => (
-                <div key={index} className="text-center p-4 sm:p-6 bg-gray-800/50 rounded-xl sm:rounded-2xl border border-gray-700 backdrop-blur-sm">
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-400 mb-1 sm:mb-2">{stat.number}</div>
-                  <div className="text-gray-300 text-xs sm:text-sm">{stat.label}</div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-400">
+              Types of 50x-100x Opportunities You'll Learn to Spot
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
+              {massiveGainCoins.map((coin, index) => (
+                <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-green-500/30 p-4 sm:p-6">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-base sm:text-lg font-bold text-white">{coin.name}</h3>
+                    <span className="px-2 py-1 rounded text-xs font-medium bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-400 border border-green-500/30">
+                      {coin.potential}
+                    </span>
+                  </div>
+                  <p className="text-gray-300 mb-3 text-xs sm:text-sm md:text-base">{coin.description}</p>
+                  <div className="text-xs sm:text-sm text-green-400">
+                    <strong>Examples:</strong> {coin.examples}
+                  </div>
                 </div>
               ))}
+            </div>
+
+            {/* Potential ROI Visualization */}
+            <div className="mt-8 bg-gray-800/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-green-500/30">
+              <h3 className="text-lg sm:text-xl font-bold text-center text-white mb-4">
+                What These Gains Could Mean For You:
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+                {[
+                  { amount: "$100", potential: "$5,000 - $10,000", label: "Small Start" },
+                  { amount: "$500", potential: "$25,000 - $50,000", label: "Part-time Job" },
+                  { amount: "$1,000", potential: "$50,000 - $100,000", label: "Life Changing" },
+                  { amount: "$2,500", potential: "$125,000 - $250,000", label: "Early Retirement" }
+                ].map((item, index) => (
+                  <div key={index} className="text-center p-3 bg-green-500/10 rounded-lg border border-green-500/20">
+                    <div className="text-green-400 font-bold text-sm">{item.amount}</div>
+                    <div className="text-white text-xs sm:text-sm font-bold">{item.potential}</div>
+                    <div className="text-gray-400 text-xs">{item.label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Learning Steps */}
+        {/* Learning Steps - Updated for 50x Focus */}
         <section id="steps" className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
-              Your 5-Step Crypto Starter Guide
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-400">
+              Your Path to Finding 50x-100x Crypto Gems
             </h2>
 
             <div className="space-y-6 sm:space-y-8">
               {learningSteps.map((step, index) => (
                 <div 
                   key={index}
-                  className={`bg-gray-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-gray-700 p-4 sm:p-6 transition-all duration-500 hover:border-blue-500/30 ${
-                    currentStep === index ? 'ring-2 ring-blue-500/50' : ''
+                  className={`bg-gray-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-gray-700 p-4 sm:p-6 transition-all duration-500 hover:border-green-500/30 ${
+                    currentStep === index ? 'ring-2 ring-green-500/50' : ''
                   }`}
                 >
                   <div className="flex flex-col md:flex-row gap-4 sm:gap-6">
                     {/* Step Number & Icon */}
                     <div className="flex-shrink-0">
                       <div className="flex items-center gap-3 sm:gap-4">
-                        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold text-base sm:text-lg">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center text-white font-bold text-base sm:text-lg">
                           {step.step}
                         </div>
                         <div className="text-2xl sm:text-3xl">{step.icon}</div>
@@ -372,11 +406,11 @@ export default function CryptoLearningLanding() {
                       
                       {/* Tips */}
                       <div className="mb-3 sm:mb-4">
-                        <h4 className="text-xs sm:text-sm font-semibold text-cyan-400 mb-1 sm:mb-2">Important Tips:</h4>
+                        <h4 className="text-xs sm:text-sm font-semibold text-green-400 mb-1 sm:mb-2">Key Insights:</h4>
                         <ul className="space-y-1">
                           {step.tips.map((tip, tipIndex) => (
                             <li key={tipIndex} className="flex items-center text-xs sm:text-sm text-gray-300">
-                              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-cyan-400 rounded-full mr-2 sm:mr-3"></span>
+                              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-400 rounded-full mr-2 sm:mr-3"></span>
                               {tip}
                             </li>
                           ))}
@@ -387,113 +421,19 @@ export default function CryptoLearningLanding() {
                 </div>
               ))}
             </div>
-
-            {/* Step Navigation */}
-            <div className="flex justify-center mt-6 sm:mt-8 space-x-1 sm:space-x-2">
-              {learningSteps.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentStep(index)}
-                  className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
-                    currentStep === index
-                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 w-6 sm:w-8'
-                      : 'bg-gray-600 hover:bg-gray-500'
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FOMO Section */}
-        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-500/10 to-pink-500/10">
-          <div className="w-full max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white">
-              What Happens If You Don&apos;t Start Today?
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-8 mb-8">
-              <div className="bg-red-500/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-red-500/20">
-                <div className="text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4">The Cost of Waiting</div>
-                <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-3 sm:mb-4">What You&apos;ll Miss</h3>
-                <ul className="space-y-2 sm:space-y-3 text-left text-xs sm:text-sm md:text-base">
-                  {[
-                    "Miss the next crypto bull run",
-                    "Watch others profit while you hesitate",
-                    "Stay stuck in the 9-5 rat race",
-                    "Lose purchasing power to inflation",
-                    "Regret not starting earlier"
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-center text-red-300">
-                      <span className="mr-2 sm:mr-3">❌</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="bg-green-500/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-green-500/20">
-                <div className="text-lg sm:text-xl md:text-2xl mb-3 sm:mb-4">The Reward of Starting</div>
-                <h3 className="text-base sm:text-lg md:text-xl font-bold text-white mb-3 sm:mb-4">What You&apos;ll Gain</h3>
-                <ul className="space-y-2 sm:space-y-3 text-left text-xs sm:text-sm md:text-base">
-                  {[
-                    "Catch the next 10x opportunity",
-                    "Build wealth while you sleep",
-                    "Gain financial independence",
-                    "Learn valuable future skills",
-                    "Join the 1% who act instead of watch"
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-center text-green-300">
-                      <span className="mr-2 sm:mr-3">✅</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Beginner-Friendly Coins */}
-        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
-          <div className="w-full max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
-              Good Starting Coins for Beginners
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
-              {beginnerFriendlyCoins.map((coin, index) => (
-                <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-gray-700 p-4 sm:p-6">
-                  <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-base sm:text-lg font-bold text-white">{coin.name}</h3>
-                    <span className={`px-2 py-1 rounded text-xs font-medium ${
-                      coin.risk === 'Low' ? 'bg-green-500/20 text-green-400' :
-                      coin.risk === 'Low-Medium' ? 'bg-blue-500/20 text-blue-400' :
-                      'bg-yellow-500/20 text-yellow-400'
-                    }`}>
-                      {coin.risk} Risk
-                    </span>
-                  </div>
-                  <p className="text-gray-300 mb-3 text-xs sm:text-sm md:text-base">{coin.description}</p>
-                  <div className="text-xs sm:text-sm text-cyan-400">
-                    <strong>Why start here:</strong> {coin.why}
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
         {/* Common Mistakes to Avoid */}
         <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
-              Common Beginner Mistakes to Avoid
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-400">
+              Why 95% Miss 50x Opportunities
             </h2>
 
             <div className="grid gap-3 sm:gap-4">
               {commonMistakes.map((mistake, index) => (
-                <div key={index} className="flex items-start bg-gray-800/50 backdrop-blur-sm rounded-lg sm:rounded-xl border border-gray-700 p-3 sm:p-4">
+                <div key={index} className="flex items-start bg-gray-800/50 backdrop-blur-sm rounded-lg sm:rounded-xl border border-red-500/30 p-3 sm:p-4">
                   <span className="text-red-400 mr-2 sm:mr-3 mt-0.5 sm:mt-1 text-sm">❌</span>
                   <p className="text-gray-300 text-xs sm:text-sm md:text-base">{mistake}</p>
                 </div>
@@ -502,138 +442,8 @@ export default function CryptoLearningLanding() {
           </div>
         </section>
 
-        {/* Objection Handling */}
-        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
-          <div className="w-full max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
-              Common Concerns - Addressed
-            </h2>
-            
-            <div className="space-y-4 sm:space-y-6">
-              {[
-                {
-                  objection: "I don't have enough money to start",
-                  response: "You can begin with just $20! Many of our most successful students started with small amounts. The key is learning the process first."
-                },
-                {
-                  objection: "Crypto seems too complicated",
-                  response: "We break everything down into simple, bite-sized lessons. Our community members range from 18 to 75 years old - if they can learn, so can you!"
-                },
-                {
-                  objection: "I'm worried about scams and losing money",
-                  response: "That&apos;s exactly why you need proper education! We teach you how to spot scams and protect your investments from day one."
-                },
-                {
-                  objection: "I don't have time to learn this",
-                  response: "Our lessons take 10-15 minutes per day. Most students complete the core training during their lunch break or commute."
-                }
-              ].map((item, index) => (
-                <div key={index} className="bg-gray-800/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-gray-700">
-                  <div className="flex items-start">
-                    <div className="bg-red-500/20 rounded-lg p-2 sm:p-3 mr-3 sm:mr-4">
-                      <span className="text-red-400 font-bold text-sm">?</span>
-                    </div>
-                    <div>
-                      <h3 className="text-base sm:text-lg font-bold text-white mb-2">{item.objection}</h3>
-                      <p className="text-gray-300 text-xs sm:text-sm md:text-base">{item.response}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Risk Reversal Section */}
-        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
-          <div className="w-full max-w-4xl mx-auto text-center">
-            <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-green-500/20">
-              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-green-500 rounded-full mb-4 sm:mb-6 text-xl sm:text-2xl">
-                ✅
-              </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
-                Zero Risk. Maximum Reward.
-              </h2>
-              
-              <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
-                {[
-                  {
-                    icon: "💰",
-                    title: "100% Free Access",
-                    desc: "No hidden fees, no credit card required"
-                  },
-                  {
-                    icon: "🛡️",
-                    title: "No Investment Needed",
-                    desc: "Learn first, invest when you&apos;re ready"
-                  },
-                  {
-                    icon: "⏰",
-                    title: "Cancel Anytime",
-                    desc: "Leave the group whenever you want"
-                  },
-                  {
-                    icon: "🎯",
-                    title: "Proven Methods",
-                    desc: "Strategies that actually work for beginners"
-                  }
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start space-x-3 sm:space-x-4 text-left">
-                    <div className="text-xl sm:text-2xl">{item.icon}</div>
-                    <div>
-                      <h4 className="font-bold text-white text-sm sm:text-base">{item.title}</h4>
-                      <p className="text-gray-300 text-xs sm:text-sm">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="bg-yellow-500/20 border border-yellow-500/30 rounded-lg sm:rounded-xl p-3 sm:p-4">
-                <p className="text-yellow-300 font-semibold text-xs sm:text-sm md:text-base">
-                  Warning: The only risk is NOT starting. Every day you wait, you&apos;re missing potential opportunities in the crypto market.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="w-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
-          <div className="w-full max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
-              Frequently Asked Questions
-            </h2>
-
-            <div className="grid gap-4 sm:gap-6">
-              {[
-                {
-                  question: "How much money do I need to start?",
-                  answer: "You can start with as little as $20! Many beginners start with $50-100 to learn the process without significant risk."
-                },
-                {
-                  question: "Is cryptocurrency safe?",
-                  answer: "Yes, when you follow security best practices. The technology itself is secure, but users need to be careful about scams and properly secure their wallets."
-                },
-                {
-                  question: "How long does it take to learn?",
-                  answer: "You can make your first purchase in under 30 minutes. Understanding the broader ecosystem takes time, but we break it down into manageable lessons."
-                },
-                {
-                  question: "What if I lose my password?",
-                  answer: "This is why your recovery phrase is crucial! It&apos;s the only way to restore access to your wallet if you forget your password or lose your device."
-                }
-              ].map((faq, index) => (
-                <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-gray-700 p-4 sm:p-6">
-                  <h3 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3">{faq.question}</h3>
-                  <p className="text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Final CTA with Scarcity */}
-        <section className="w-full py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/30 to-cyan-900/30">
+        <section className="w-full py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-900/30 to-emerald-900/30">
           <div className="w-full max-w-4xl mx-auto text-center">
             
             {/* Live Counter */}
@@ -641,34 +451,34 @@ export default function CryptoLearningLanding() {
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-3 sm:space-x-4">
                 <div className="flex items-center">
                   <span className="animate-pulse text-red-400 mr-1 sm:mr-2 text-sm">🔥</span>
-                  <span className="text-red-400 font-bold text-xs sm:text-sm">LIVE:</span>
+                  <span className="text-red-400 font-bold text-xs sm:text-sm">ALERT:</span>
                 </div>
                 <div className="text-white text-xs sm:text-sm md:text-base">
-                  <span className="font-bold">47 people</span> joined in the last hour
+                  <span className="font-bold">3 potential 50x gems</span> being analyzed right now
                 </div>
                 <div className="text-yellow-400 text-xs sm:text-sm md:text-base">
-                  Only <span className="font-bold">23 spots</span> remaining today
+                  Next analysis drops in: <span className="font-bold">24 hours</span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-cyan-500/30 relative overflow-hidden">
+            <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-green-500/30 relative overflow-hidden">
               
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
-                Your Financial Future Starts Now
+                Your First 50x Opportunity Awaits
               </h2>
               
               <p className="text-sm sm:text-base md:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
-                Join <span className="text-cyan-400 font-bold">4,287+ beginners</span> who&apos;ve already taken control of their financial destiny. 
-                What are you waiting for?
+                Join <span className="text-green-400 font-bold">4,287+ investors</span> who are learning to spot life-changing crypto opportunities. 
+                Don't watch from the sidelines.
               </p>
 
               {/* Benefits Recap */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 mb-6 sm:mb-8">
                 {[
-                  "Free Access",
-                  "24/7 Support", 
-                  "Proven Results",
+                  "50x Analysis",
+                  "Gem Alerts", 
+                  "Real-time Calls",
                   "Zero Risk"
                 ].map((benefit, index) => (
                   <div key={index} className="bg-gray-800/50 rounded-lg p-2 sm:p-3">
@@ -684,14 +494,14 @@ export default function CryptoLearningLanding() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full max-w-md px-4 sm:px-8 py-4 sm:py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold rounded-xl sm:rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl text-base sm:text-lg md:text-xl mb-3 sm:mb-4"
               >
-                START MY FREE CRYPTO JOURNEY NOW
+                🚀 GET INSTANT ACCESS TO 50X GEM ANALYSIS
               </a>
               <p className="text-gray-400 text-xs sm:text-sm mb-4 sm:mb-6">
-                You&apos;ll be redirected to join our Telegram group for instant free access
+                Join our FREE Telegram group - Next potential 50x coin analysis dropping soon!
               </p>
 
               <p className="text-gray-400 text-xs sm:text-sm">
-                Instant access • No credit card required
+                Free access • Live gem analysis • Proven framework
               </p>
             </div>
           </div>
