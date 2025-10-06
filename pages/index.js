@@ -104,7 +104,7 @@ export default function CryptoLearningLanding() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+    <div className="min-h-screen w-screen min-w-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-x-hidden">
       {/* Enhanced Animated Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 -left-20 w-72 h-72 bg-blue-500/20 rounded-full filter blur-3xl animate-pulse"></div>
@@ -112,10 +112,10 @@ export default function CryptoLearningLanding() {
         <div className="absolute bottom-20 left-1/4 w-64 h-64 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse animation-delay-2000"></div>
       </div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 w-full">
         {/* SUPERCHARGED HERO SECTION */}
-        <section className={`min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="max-w-6xl mx-auto text-center">
+        <section className={`min-h-screen w-full flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="w-full max-w-6xl mx-auto text-center">
             
             {/* Attention-Grabbing Badge */}
             <div className="inline-flex items-center px-4 sm:px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full text-gray-900 font-bold text-xs sm:text-sm mb-8 animate-pulse">
@@ -145,7 +145,7 @@ export default function CryptoLearningLanding() {
             </p>
 
             {/* Pain Points */}
-            <div className="max-w-3xl mx-auto mb-12">
+            <div className="w-full max-w-3xl mx-auto mb-12">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 text-left">
                 {[
                   {
@@ -194,7 +194,7 @@ export default function CryptoLearningLanding() {
             </div>
 
             {/* Enhanced CTA Section */}
-            <div className="max-w-2xl mx-auto">
+            <div className="w-full max-w-2xl mx-auto">
               <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl p-6 sm:p-8 border border-cyan-500/30 mb-8">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
                   What You Get for FREE:
@@ -272,8 +272,8 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Social Proof - Success Stories */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/30">
-          <div className="max-w-6xl mx-auto">
+        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/30">
+          <div className="w-full max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Real People, Real Results
             </h2>
@@ -321,8 +321,8 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Stats Section */}
-        <section className="py-12 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
+        <section className="w-full py-12 px-4 sm:px-6 lg:px-8">
+          <div className="w-full max-w-6xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               {[
                 { number: "5", label: "Simple Steps" },
@@ -340,8 +340,8 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Learning Steps */}
-        <section id="steps" className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
+        <section id="steps" className="w-full py-16 px-4 sm:px-6 lg:px-8">
+          <div className="w-full max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Your 5-Step Crypto Starter Guide
             </h2>
@@ -406,8 +406,8 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* FOMO Section */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-500/10 to-pink-500/10">
-          <div className="max-w-4xl mx-auto text-center">
+        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-500/10 to-pink-500/10">
+          <div className="w-full max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               What Happens If You Don&apos;t Start Today?
             </h2>
@@ -455,8 +455,8 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Beginner-Friendly Coins */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
-          <div className="max-w-4xl mx-auto">
+        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
+          <div className="w-full max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Good Starting Coins for Beginners
             </h2>
@@ -485,8 +485,8 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Common Mistakes to Avoid */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
+        <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
+          <div className="w-full max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Common Beginner Mistakes to Avoid
             </h2>
@@ -503,8 +503,8 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Objection Handling */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
+        <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
+          <div className="w-full max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Common Concerns - Addressed
             </h2>
@@ -545,8 +545,8 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Risk Reversal Section */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
+        <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
+          <div className="w-full max-w-4xl mx-auto text-center">
             <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-3xl p-8 border border-green-500/20">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mb-6 text-2xl">
                 ✅
@@ -598,8 +598,8 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
-          <div className="max-w-4xl mx-auto">
+        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/20">
+          <div className="w-full max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">
               Frequently Asked Questions
             </h2>
@@ -633,8 +633,8 @@ export default function CryptoLearningLanding() {
         </section>
 
         {/* Final CTA with Scarcity */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/30 to-cyan-900/30">
-          <div className="max-w-4xl mx-auto text-center">
+        <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/30 to-cyan-900/30">
+          <div className="w-full max-w-4xl mx-auto text-center">
             
             {/* Live Counter */}
             <div className="bg-red-500/20 border border-red-500/30 rounded-xl p-4 mb-8">
