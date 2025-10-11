@@ -137,7 +137,7 @@ export default function CryptoLearningLanding() {
     <div className="min-h-screen w-full bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-x-hidden">
       
       {/* ========================================================================
-        FACEBOOK PIXEL CODE INSERTED HERE USING NEXT/HEAD
+        FACEBOOK PIXEL CODE INSERTED HERE USING NEXT/HEAD (UPDATED)
         ========================================================================
       */}
       <Head>
@@ -155,6 +155,11 @@ export default function CryptoLearningLanding() {
               'https://connect.facebook.net/en_US/fbevents.js');
               fbq('init', '1396011548652691');
               fbq('track', 'PageView');
+              
+              // NEW ViewContent EVENT ADDED BELOW
+              fbq('track', 'ViewContent', {
+                value: 1,
+              });
             `,
           }}
         />
