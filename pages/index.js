@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
+
 
 export default function CryptoLearningLanding() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -133,6 +135,41 @@ export default function CryptoLearningLanding() {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-x-hidden">
+      
+      {/* ========================================================================
+        FACEBOOK PIXEL CODE INSERTED HERE USING NEXT/HEAD
+        ========================================================================
+      */}
+      <Head>
+        {/* Meta Pixel Code */} 
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '1396011548652691');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=1396011548652691&ev=PageView&noscript=1"
+            alt="Facebook Pixel"
+          />
+        </noscript>
+        {/* End Meta Pixel Code */}
+      </Head>
+
       {/* Fixed Background Animation */}
       <div className="fixed inset-0 z-0 overflow-hidden">
         <div className="absolute top-1/4 -left-10 sm:-left-20 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/20 rounded-full filter blur-3xl animate-pulse"></div>
